@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FIDIC Contracts - MK Training</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+ <header class="header">
+        <div class="logo">
+    <a href="index.html">
+        <img src="/images/logo.jpeg" alt="MK Training Logo">
+        <span>MK Training</span>
+    </a>
+</div>
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="course-details">
+  <div class="course-container">
+    <img src="/images/fidik1.webp" alt="FIDIC Contracts">
+    <div class="course-info">
+      <h1>FIDIC Contracts</h1>
+      <p>
+        This course introduces participants to the structure, key provisions, and practical applications of FIDIC contracts. 
+        It provides a detailed understanding of roles, responsibilities, and risk allocation under the different FIDIC contract types.
+      </p>
+
+      <h3>Course Objectives</h3>
+      <ul>
+        <li>Understand the structure and main clauses of FIDIC contracts.</li>
+        <li>Distinguish between different FIDIC books and their applications.</li>
+        <li>Identify roles and obligations of employers, engineers, and contractors.</li>
+        <li>Interpret key contractual provisions such as variations, claims, and payments.</li>
+      </ul>
+
+      <h3>Topics Covered</h3>
+      <ul>
+        <li>Overview of FIDIC Contract Series (Red, Yellow, Silver, Green Books)</li>
+        <li>Roles and Responsibilities of Contracting Parties</li>
+        <li>Key Clauses: Variations, Claims, Payments, and Termination</li>
+        <li>FIDIC Risk Allocation Principles</li>
+        <li>Contract Administration and Dispute Resolution Mechanisms</li>
+      </ul>
+
+      <h3>Course Details</h3>
+      <ul>
+        <li><strong>Duration:</strong> 20 Hours</li>
+        <li><strong>Level:</strong> Intermediate to Advanced</li>
+        <li><strong>Language:</strong> English</li>
+        <li><strong>Instructor:</strong> Eng. Moh’d Kamal</li>
+      </ul>
+
+      <a href="contact.html" class="btn">Enroll Now</a>
+      <a href="courses.html" class="btn back-btn">← Back to Courses</a>
+    </div>
+  </div>
+</section>
+
+<section class="course-breakdown">
+  <h2>Course Breakdown</h2>
+
+  <button class="accordion">Day 1 – Introduction to FIDIC Contracts</button>
+  <div class="panel">
+    <p>Overview of FIDIC organization, contract types, and industry applications.</p>
+  </div>
+
+  <button class="accordion">Day 2 – Key Clauses and Contractual Roles</button>
+  <div class="panel">
+    <p>Understanding parties’ obligations, responsibilities, and key FIDIC clauses.</p>
+  </div>
+
+  <button class="accordion">Day 3 – Risk Allocation and Claims</button>
+  <div class="panel">
+    <p>Risk management under FIDIC contracts, claims preparation, and dispute handling.</p>
+  </div>
+
+  <button class="accordion">Day 4 – Contract Administration & Case Studies</button>
+  <div class="panel">
+    <p>Applying FIDIC principles in real project scenarios and managing contract execution.</p>
+  </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-left">
+            <h3>MK Training & Consulting</h3>
+            <p>Enhancing skills in Contracts, Planning, Procurement & Project Management</p>
+        </div>
+        <div class="footer-center">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-right">
+            <h4>Contact Us</h4>
+            <p>Email: info@mktraining.com</p>
+            <p>Phone: +20 123 456 7890</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </div>
+    <p class="footer-bottom">&copy; 2025 MK Training & Consulting. All rights reserved.</p>
+</footer>
+
+<script>
+  const acc = document.querySelectorAll(".accordion");
+  acc.forEach(button => {
+    button.addEventListener("click", () => {
+      button.classList.toggle("active");
+      const panel = button.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
+
+
+

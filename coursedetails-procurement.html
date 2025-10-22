@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Procurement & Supply Chain Management (Advanced) - MK Training</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+ <header class="header">
+        <div class="logo">
+    <a href="index.html">
+        <img src="/images/logo.jpeg" alt="MK Training Logo">
+        <span>MK Training</span>
+    </a>
+</div>
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="course-details">
+  <div class="course-container">
+    <img src="/images/procurementadv.webp" alt="Procurement & Supply Chain Management (Advanced)">
+    <div class="course-info">
+      <h1>Procurement & Supply Chain Management (Advanced)</h1>
+      <p>
+        This course is designed for professionals aiming to master advanced concepts in procurement 
+        and supply chain management. It covers strategic sourcing, supplier evaluation, risk management, 
+        and performance optimization within modern global supply chains.
+      </p>
+
+      <h3>Course Objectives</h3>
+      <ul>
+        <li>Understand advanced procurement and supply chain processes.</li>
+        <li>Develop strategies for supplier relationship and performance management.</li>
+        <li>Learn contract negotiation and sourcing optimization techniques.</li>
+        <li>Apply risk analysis and mitigation strategies in procurement operations.</li>
+      </ul>
+
+      <h3>Topics Covered</h3>
+      <ul>
+        <li>Procurement Processes & Life Cycle</li>
+        <li>Strategic Sourcing and Supplier Selection</li>
+        <li>Supplier Evaluation & Performance Metrics</li>
+        <li>Negotiation and Cost Analysis</li>
+        <li>Risk Management in Procurement</li>
+        <li>Supply Chain Integration & Digitalization</li>
+        <li>Ethical and Sustainable Procurement Practices</li>
+      </ul>
+
+      <h3>Course Details</h3>
+      <ul>
+        <li><strong>Duration:</strong> 20 Hours</li>
+        <li><strong>Level:</strong> Advanced</li>
+        <li><strong>Language:</strong> English</li>
+        <li><strong>Instructor:</strong> Eng. Moh’d Kamal</li>
+      </ul>
+
+      <a href="contact.html" class="btn">Enroll Now</a>
+      <a href="courses.html" class="btn back-btn">← Back to Courses</a>
+    </div>
+  </div>
+</section>
+
+<section class="course-breakdown">
+  <h2>Course Breakdown</h2>
+
+  <button class="accordion">Day 1 – Advanced Procurement Processes</button>
+  <div class="panel">
+    <p>Overview of advanced procurement cycle, sourcing strategies, and supplier engagement models.</p>
+  </div>
+
+  <button class="accordion">Day 2 – Supplier Evaluation & Performance</button>
+  <div class="panel">
+    <p>Developing KPIs, scorecards, and evaluation frameworks for supplier performance measurement.</p>
+  </div>
+
+  <button class="accordion">Day 3 – Negotiation & Risk Management</button>
+  <div class="panel">
+    <p>Effective negotiation techniques, cost analysis, and identifying procurement-related risks.</p>
+  </div>
+
+  <button class="accordion">Day 4 – Supply Chain Integration & Sustainability</button>
+  <div class="panel">
+    <p>Integrating digital tools, promoting sustainability, and managing ethical procurement practices.</p>
+  </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-left">
+            <h3>MK Training & Consulting</h3>
+            <p>Enhancing skills in Contracts, Planning, Procurement & Project Management</p>
+        </div>
+        <div class="footer-center">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-right">
+            <h4>Contact Us</h4>
+            <p>Email: info@mktraining.com</p>
+            <p>Phone: +20 123 456 7890</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </div>
+    <p class="footer-bottom">&copy; 2025 MK Training & Consulting. All rights reserved.</p>
+</footer>
+
+<script>
+  const acc = document.querySelectorAll(".accordion");
+  acc.forEach(button => {
+    button.addEventListener("click", () => {
+      button.classList.toggle("active");
+      const panel = button.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
+

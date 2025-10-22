@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Risk Management & Project Control - MK Training</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+ <header class="header">
+        <div class="logo">
+    <a href="index.html">
+        <img src="/images/logo.jpeg" alt="MK Training Logo">
+        <span>MK Training</span>
+    </a>
+</div>
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="course-details">
+  <div class="course-container">
+    <img src="/images/Risk-Management.jpg" alt="Risk Management & Project Control">
+    <div class="course-info">
+      <h1>Risk Management & Project Control</h1>
+      <p>
+        This course provides a comprehensive understanding of identifying, assessing, and controlling project risks. 
+        It emphasizes practical tools and methodologies for risk management, cost control, and schedule monitoring 
+        to ensure project success.
+      </p>
+
+      <h3>Course Objectives</h3>
+      <ul>
+        <li>Identify and evaluate risks that may impact project objectives.</li>
+        <li>Develop risk response strategies and mitigation plans.</li>
+        <li>Apply tools for cost and schedule control in project execution.</li>
+        <li>Enhance decision-making using quantitative risk analysis techniques.</li>
+      </ul>
+
+      <h3>Topics Covered</h3>
+      <ul>
+        <li>Introduction to Risk Management Concepts</li>
+        <li>Risk Identification and Assessment Methods</li>
+        <li>Qualitative & Quantitative Risk Analysis</li>
+        <li>Risk Response Planning and Monitoring</li>
+        <li>Project Cost & Schedule Control Techniques</li>
+        <li>Performance Measurement (EVM – Earned Value Management)</li>
+      </ul>
+
+      <h3>Course Details</h3>
+      <ul>
+        <li><strong>Duration:</strong> 20 Hours</li>
+        <li><strong>Level:</strong> Intermediate</li>
+        <li><strong>Language:</strong> English</li>
+        <li><strong>Instructor:</strong> Eng. Moh’d Kamal</li>
+      </ul>
+
+      <a href="contact.html" class="btn">Enroll Now</a>
+      <a href="courses.html" class="btn back-btn">← Back to Courses</a>
+    </div>
+  </div>
+</section>
+
+<section class="course-breakdown">
+  <h2>Course Breakdown</h2>
+
+  <button class="accordion">Day 1 – Fundamentals of Risk Management</button>
+  <div class="panel">
+    <p>Introduction to project risk management framework, definitions, and risk categories.</p>
+  </div>
+
+  <button class="accordion">Day 2 – Risk Identification & Assessment</button>
+  <div class="panel">
+    <p>Techniques for identifying risks and assessing their probability and impact.</p>
+  </div>
+
+  <button class="accordion">Day 3 – Risk Response & Control</button>
+  <div class="panel">
+    <p>Developing mitigation strategies, monitoring risks, and implementing control measures.</p>
+  </div>
+
+  <button class="accordion">Day 4 – Project Control & Performance</button>
+  <div class="panel">
+    <p>Applying cost and schedule control, EVM, and performance analysis for ongoing projects.</p>
+  </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-left">
+            <h3>MK Training & Consulting</h3>
+            <p>Enhancing skills in Contracts, Planning, Procurement & Project Management</p>
+        </div>
+        <div class="footer-center">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-right">
+            <h4>Contact Us</h4>
+            <p>Email: info@mktraining.com</p>
+            <p>Phone: +20 123 456 7890</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </div>
+    <p class="footer-bottom">&copy; 2025 MK Training & Consulting. All rights reserved.</p>
+</footer>
+
+<script>
+  const acc = document.querySelectorAll(".accordion");
+  acc.forEach(button => {
+    button.addEventListener("click", () => {
+      button.classList.toggle("active");
+      const panel = button.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
+
+
+

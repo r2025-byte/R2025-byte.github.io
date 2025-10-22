@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leadership & Team Development - MK Training</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+ <header class="header">
+        <div class="logo">
+    <a href="index.html">
+        <img src="/images/logo.jpeg" alt="MK Training Logo">
+        <span>MK Training</span>
+    </a>
+</div>
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="course-details">
+  <div class="course-container">
+    <img src="/images/leadership.jpg" alt="Leadership & Team Development">
+    <div class="course-info">
+      <h1>Leadership & Team Development</h1>
+      <p>
+        This course empowers participants with the leadership and interpersonal skills necessary 
+        to build, motivate, and manage high-performing teams. It focuses on emotional intelligence, 
+        communication, and team dynamics for effective leadership in professional environments.
+      </p>
+
+      <h3>Course Objectives</h3>
+      <ul>
+        <li>Understand different leadership styles and their impact on team performance.</li>
+        <li>Develop emotional intelligence and interpersonal communication skills.</li>
+        <li>Enhance teamwork, motivation, and conflict resolution strategies.</li>
+        <li>Lead teams through change and continuous improvement initiatives.</li>
+      </ul>
+
+      <h3>Topics Covered</h3>
+      <ul>
+        <li>Fundamentals of Leadership & Management</li>
+        <li>Leadership Styles & Emotional Intelligence</li>
+        <li>Building & Developing High-Performing Teams</li>
+        <li>Motivation, Delegation & Feedback Techniques</li>
+        <li>Team Communication & Conflict Resolution</li>
+        <li>Leading Change & Continuous Improvement</li>
+      </ul>
+
+      <h3>Course Details</h3>
+      <ul>
+        <li><strong>Duration:</strong> 16 Hours</li>
+        <li><strong>Level:</strong> General / All Professionals</li>
+        <li><strong>Language:</strong> English</li>
+        <li><strong>Instructor:</strong> Eng. Moh’d Kamal</li>
+      </ul>
+
+      <a href="contact.html" class="btn">Enroll Now</a>
+      <a href="courses.html" class="btn back-btn">← Back to Courses</a>
+    </div>
+  </div>
+</section>
+
+<section class="course-breakdown">
+  <h2>Course Breakdown</h2>
+
+  <button class="accordion">Day 1 – Fundamentals of Leadership</button>
+  <div class="panel">
+    <p>Exploring leadership principles, roles, and key differences between leaders and managers.</p>
+  </div>
+
+  <button class="accordion">Day 2 – Emotional Intelligence & Communication</button>
+  <div class="panel">
+    <p>Developing emotional intelligence, active listening, and effective communication techniques.</p>
+  </div>
+
+  <button class="accordion">Day 3 – Team Building & Motivation</button>
+  <div class="panel">
+    <p>Building trust, motivating team members, and creating a collaborative work culture.</p>
+  </div>
+
+  <button class="accordion">Day 4 – Leading Change & Conflict Resolution</button>
+  <div class="panel">
+    <p>Managing organizational change, resolving conflicts, and fostering continuous improvement.</p>
+  </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-left">
+            <h3>MK Training & Consulting</h3>
+            <p>Enhancing skills in Contracts, Planning, Procurement & Project Management</p>
+        </div>
+        <div class="footer-center">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-right">
+            <h4>Contact Us</h4>
+            <p>Email: info@mktraining.com</p>
+            <p>Phone: +20 123 456 7890</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </div>
+    <p class="footer-bottom">&copy; 2025 MK Training & Consulting. All rights reserved.</p>
+</footer>
+
+<script>
+  const acc = document.querySelectorAll(".accordion");
+  acc.forEach(button => {
+    button.addEventListener("click", () => {
+      button.classList.toggle("active");
+      const panel = button.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  });
+</script>
+
+</body>
+</html>

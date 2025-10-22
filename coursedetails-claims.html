@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Claims Management & Dispute Resolution - MK Training</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+ <header class="header">
+        <div class="logo">
+    <a href="index.html">
+        <img src="/images/logo.jpeg" alt="MK Training Logo">
+        <span>MK Training</span>
+    </a>
+</div>
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="course-details">
+  <div class="course-container">
+    <img src="/images/claims.jpg" alt="Claims Management & Dispute Resolution">
+    <div class="course-info">
+      <h1>Claims Management & Dispute Resolution</h1>
+      <p>
+        This course provides professionals with essential knowledge and tools to effectively identify, 
+        prepare, and manage contractual claims. It also covers methods of dispute avoidance and resolution 
+        under international contract standards, including FIDIC principles.
+      </p>
+
+      <h3>Course Objectives</h3>
+      <ul>
+        <li>Understand the nature and causes of contractual claims.</li>
+        <li>Learn claim identification, notification, and documentation techniques.</li>
+        <li>Gain knowledge of dispute resolution mechanisms and procedures.</li>
+        <li>Apply best practices for negotiation and claim settlement.</li>
+      </ul>
+
+      <h3>Topics Covered</h3>
+      <ul>
+        <li>Types and Causes of Claims</li>
+        <li>Claim Identification and Documentation</li>
+        <li>Claim Evaluation and Submission</li>
+        <li>FIDIC Clauses Related to Claims</li>
+        <li>Dispute Avoidance and Negotiation Techniques</li>
+        <li>Dispute Resolution Methods: ADR, Arbitration, Litigation</li>
+      </ul>
+
+      <h3>Course Details</h3>
+      <ul>
+        <li><strong>Duration:</strong> 20 Hours</li>
+        <li><strong>Level:</strong> Intermediate to Advanced</li>
+        <li><strong>Language:</strong> English</li>
+        <li><strong>Instructor:</strong> Eng. Moh’d Kamal</li>
+      </ul>
+
+      <a href="contact.html" class="btn">Enroll Now</a>
+      <a href="courses.html" class="btn back-btn">← Back to Courses</a>
+    </div>
+  </div>
+</section>
+
+<section class="course-breakdown">
+  <h2>Course Breakdown</h2>
+
+  <button class="accordion">Day 1 – Introduction to Claims</button>
+  <div class="panel">
+    <p>Overview of claim types, causes, and contractual implications in construction projects.</p>
+  </div>
+
+  <button class="accordion">Day 2 – Claim Preparation & Documentation</button>
+  <div class="panel">
+    <p>How to identify, analyze, and prepare claim documentation with supporting evidence.</p>
+  </div>
+
+  <button class="accordion">Day 3 – Evaluation & Negotiation</button>
+  <div class="panel">
+    <p>Methods for evaluating claims, assessing entitlement, and negotiating settlements.</p>
+  </div>
+
+  <button class="accordion">Day 4 – Dispute Resolution Methods</button>
+  <div class="panel">
+    <p>Exploring ADR, arbitration, and dispute boards, with reference to FIDIC procedures.</p>
+  </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-left">
+            <h3>MK Training & Consulting</h3>
+            <p>Enhancing skills in Contracts, Planning, Procurement & Project Management</p>
+        </div>
+        <div class="footer-center">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-right">
+            <h4>Contact Us</h4>
+            <p>Email: info@mktraining.com</p>
+            <p>Phone: +20 123 456 7890</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </div>
+    <p class="footer-bottom">&copy; 2025 MK Training & Consulting. All rights reserved.</p>
+</footer>
+
+<script>
+  const acc = document.querySelectorAll(".accordion");
+  acc.forEach(button => {
+    button.addEventListener("click", () => {
+      button.classList.toggle("active");
+      const panel = button.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
