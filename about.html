@@ -108,7 +108,7 @@
 <footer class="footer">
     <div class="footer-container">
         <div class="footer-left">
-            <h3>MK Training & Consulting</h3>
+            <h3>EQUITAS</h3>
             <p>Enhancing skills in Contracts, Planning, Procurement & Project Management</p>
         </div>
         <div class="footer-center">
@@ -139,16 +139,21 @@
 
 <!-- for the language -->
 <script src="lang.js"></script>
+
 <!-- BURGER MENUE -->
  <script>
-  const menuToggle = document.getElementById('menu-toggle');
-  const navLinks = document.querySelector('.navbar ul');
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navMenu = document.querySelector('.navbar ul');
 
-  menuToggle.addEventListener('click', () => {
-    menuToggle.classList.toggle('active');
-    navLinks.classList.toggle('active');
-  });
+  if (menuToggle && navMenu) {
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active');
+      navMenu.classList.toggle('active');
+    });
+  }
 </script>
+
+
 <script>
   window.addEventListener('scroll', function() {
     const header = document.querySelector('header');
