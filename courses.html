@@ -12,11 +12,16 @@
 <header class="header">
   <div class="logo">
   <a href="about.html">
-        <img src="/images/logo.jpeg" alt="MK Training Logo">
-        <span>MK Training</span>
+        <img src="/images/logo.jpeg" alt="EQUITAS">
+        <span>EQUITAS</span>
     </a>
     </div>
   <nav class="navbar">
+    <div class="menu-toggle" id="menu-toggle">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
@@ -38,6 +43,7 @@
   <h3>Contract Definition & Contract Management</h3>
   <p>Understand the fundamentals of contract formation, structure, and execution.</p>
   <a href="coursedetails-contract.html" class="btn">View Details</a>
+  <a href="info.html?course=Contract Management" class="btn">Inquire Now</a>
 </div>
 
     <!-- 2 -->
@@ -46,6 +52,7 @@
       <h3>Acquisition & Contract Competencies</h3>
       <p>Learn essential procurement and contracting skills for project success.</p>
       <a href="./acquisition-competencies.html" class="btn">View Details</a>
+      <a href="info.html?course=Contract Management" class="btn">Inquire Now</a>
     </div>
 
     <!-- 3 -->
@@ -54,6 +61,7 @@
       <h3>Contract Agreement & administration</h3>
       <p>Master contract administration and ensure project compliance.</p>
       <a href="./contract-agreement.html" class="btn">View Details</a>
+      <a href="info.html?course=Contract Management" class="btn">Inquire Now</a>
     </div>
     <!-- 4 -->
     <div class="course-card">
@@ -61,6 +69,7 @@
       <h3>Cost Management & Economics</h3>
       <p>Analyze and control costs to ensure financial efficiency in projects.</p>
       <a href="./coursedetails-cost.html" class="btn">View Details</a>
+      <a href="info.html?course=Contract Management" class="btn">Inquire Now</a>
     </div>
 
     <!-- 5 -->
@@ -69,6 +78,7 @@
       <h3>Commercial Awareness & Supply Chain Management</h3>
       <p>Gain insights into commercial and supply chain strategies for success.</p>
       <a href="/commercial-awareness.html" class="btn">View Details</a>
+      <a href="info.html?course=Contract Management" class="btn">Inquire Now</a>
     </div>
 
 
@@ -78,6 +88,7 @@
       <h3>Planning & Scheduling (Primavera)</h3>
       <p>Learn to plan and monitor projects efficiently using Primavera P6.</p>
       <a href="/coursedetails-planning.html" class="btn">View Details</a>
+      <a href="info.html?course=Contract Management" class="btn">Inquire Now</a>
     </div>
 
     <!-- 7 -->
@@ -86,6 +97,7 @@
       <h3>Procurement & Supply Chain Management (Advanced)</h3>
       <p>Develop advanced procurement and negotiation skills.</p>
       <a href="coursedetails-procurement.html" class="btn">View Details</a>
+      <a href="info.html?course=Contract Management" class="btn">Inquire Now</a>
     </div>
 
     <!-- 8 -->
@@ -94,6 +106,7 @@
       <h3>FIDIC Contracts</h3>
       <p>Understand FIDIC contract principles and implementation in projects.</p>
       <a href="coursedetails-fidic.html" class="btn">View Details</a>
+      <a href="info.html?course=Contract Management" class="btn">Inquire Now</a>
     </div>
 
     <!-- 9 -->
@@ -102,6 +115,7 @@
       <h3>Risk Management & Project Control </h3>
       <p>Identify and mitigate project risks effectively through proper planning.</p>
       <a href="coursedetails-risk.html" class="btn">View Details</a>
+      <a href="info.html?course=Contract Management" class="btn">Inquire Now</a>
     </div>
 
     <!-- 10 -->
@@ -110,6 +124,7 @@
       <h3>Advanced Planning Using Primavera P6</h3>
       <p>Master advanced tools and techniques for project scheduling and control.</p>
       <a href="advanced-primavera.html" class="btn">View Details</a>
+      <a href="info.html?course=Contract Management" class="btn">Inquire Now</a>
     </div>
 
     <!-- 11 -->
@@ -118,6 +133,7 @@
       <h3>Project Management (Advanced)</h3>
       <p>Manage complex projects using advanced project management strategies.</p>
       <a href="coursesdetails-project-advanced.html" class="btn">View Details</a>
+      <a href="info.html?course=Contract Management" class="btn">Inquire Now</a>
     </div>
 
     <!-- 12 -->
@@ -126,6 +142,7 @@
       <h3>Time Management & Productivity</h3>
       <p>Boost your productivity and achieve more through efficient time management.</p>
       <a href="coursedetails-timemanagement.html" class="btn">View Details</a>
+      <a href="info.html?course=Contract Management" class="btn">Inquire Now</a>
     </div>
 
     <!-- 13 -->
@@ -134,6 +151,7 @@
       <h3>Presentation & Communication Skills</h3>
       <p>Enhance your public speaking, communication, and presentation abilities.</p>
       <a href="coursedetails-presentation.html" class="btn">View Details</a>
+      <a href="info.html?course=Contract Management" class="btn">Inquire Now</a>
     </div>
 
     <!-- 14 -->
@@ -142,6 +160,7 @@
       <h3>Claims Management & Dispute Resolution</h3>
       <p>Learn to manage claims and resolve disputes under FIDIC and global standards.</p>
       <a href="coursedetails-claims.html" class="btn">View Details</a>
+      <a href="info.html?course=Contract Management" class="btn">Inquire Now</a>
     </div>
 
     <!-- 15 -->
@@ -150,6 +169,7 @@
       <h3>Leadership & Team Development</h3>
       <p>Develop leadership skills to build and inspire high-performing teams.</p>
       <a href="coursedetails-leadership.html" class="btn">View Details</a>
+      <a href="info.html?course=Contract Management" class="btn">Inquire Now</a>
     </div>
 
 
@@ -193,6 +213,27 @@
 
 <!-- for the languge -->
 <script src="lang.js"></script>
+<!-- BURGER MENUE -->
+ <script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const navLinks = document.querySelector('.navbar ul');
+
+  menuToggle.addEventListener('click', () => {
+    menuToggle.classList.toggle('active');
+    navLinks.classList.toggle('active');
+  });
+</script>
+
+<script>
+  window.addEventListener('scroll', function() {
+    const header = document.querySelector('header');
+    if (window.scrollY > 50) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  });
+</script>
 
 </body>
 </html>

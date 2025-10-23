@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Inquiry</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+  <div class="logo">
+  <a href="about.html">
+        <img src="/images/logo.jpeg" alt="EQUITAS">
+        <span>EQUITAS</span>
+    </a>
+    </div>
+  <nav class="navbar">
+    <div class="menu-toggle" id="menu-toggle">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <section class="info">
+    <section class="contact-form">
+  <h1>Course Inquiry</h1>
+  <p>If you’d like to know the course fees or have any questions, contact us below 👇</p>
+<div class="contact-details">
+      <p><strong>Email:</strong> kembel67@gmail.com</p>
+      <p><strong>Phone:</strong> +74976622156<br>
++74936624021</p>
+      <p><strong>Instagram:</strong> </p>
+    </div>
+  <form action="#">
+    <input type="text" id="course" name="course" readonly placeholder="Course Name">
+
+    <input type="text" id="name" name="name" placeholder="Your Name" required>
+    <input type="email" id="email" name="email" placeholder="Your Email" required>
+    <textarea id="message" name="message" rows="4" placeholder="Your Inquiry..."></textarea>
+
+    <button type="submit">Send Inquiry</button>
+  </form>
+</section>
+</section>
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-left">
+            <h3>MK Training & Consulting</h3>
+            <p>Enhancing skills in Contracts, Planning, Procurement & Project Management</p>
+        </div>
+        <div class="footer-center">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-right">
+            <h4>Contact Us</h4>
+            <p>Email: kembel67@gmail.com</p>
+            <p>Phone: +47976622156<br>+47936624021</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </div>
+    <p class="footer-bottom">&copy; 2025 MK Training & Consulting. All rights reserved.</p>
+</footer>
+
+<script>
+  // بيجيب اسم الكورس من اللينك تلقائيًا
+  const urlParams = new URLSearchParams(window.location.search);
+  document.getElementById('course').value = urlParams.get('course') || '';
+</script>
+<script>
+  window.addEventListener('scroll', function() {
+    const header = document.querySelector('header');
+    if (window.scrollY > 50) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  });
+</script>
+
+
+</body>
+</html>
